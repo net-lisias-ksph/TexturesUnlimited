@@ -1,5 +1,20 @@
 # Textures Unlimited :: Change Log
 
+* 2018-0506: 1.1.2.14a (Shadowmange) for KSP 1.3.1 PRE-RELEASE
+	+ TESTING RELEASE
+	+ FIX - Add alternate rendering routine that can be used with DX9/DX11, slightly more overhead, but removes issues of inverted cubemap faces.
+		- Can be activated in the debug menu, or through config file, see patch example below
+			- DOES NOT FIX DX9 CUBEMAP BLURRING ISSUES
+		- version file not updated, nor has AVC target; pure testing release
+	+ still warns when starting about DX9/DX11
+	+ 'alternate rendering' mode must be enabled either manually in debug menu or with a patch (see below)
+		- Patch to enable alternate rendering mode:
+```
+@REFLECTION_CONFIG[default]
+{
+    %directXFix = true
+}
+```
 * 2018-0421: 1.1.1.13 (Shadowmange) for KSP 1.3.1
 	+ FIX - Shader replacement on models using stock TEXTURE= for texture replacement should no longer null-ref.  This was caused by incomplete texture-set definitions leaving 'empty' texture slots on the model.
 	+ FIX - Check for null materials/shaders on stock parts when doing shader and material adjustments.
