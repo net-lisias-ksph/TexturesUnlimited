@@ -1,5 +1,7 @@
 # Textures Unlimited :: Change Log
 
+* 2019-0219: 1.3.5.19 (Shadowmange) for KSP 1.6
+	+ Fix shader bundle Windows-OpenGL compatibility
 * 2019-0216: 1.3.4.18 (Shadowmange) for KSP 1.6 PRE-RELEASE
 	+ Recompile Plugin for KSP 1.6
 	+ Recompile shaders to fix mixing issues with recoloring normalization.
