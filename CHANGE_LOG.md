@@ -1,5 +1,8 @@
 # Textures Unlimited :: Change Log
 
+* 2019-0306: 1.3.6.20 (Shadowmange) for KSP 1.6
+	+ Add several functions available for external mod integration to swap texture sets or reload existing textures on model changes.
+	+ First use of new build script for this repository, so please make note of any issues with packaging.
 * 2019-0219: 1.3.5.19 (Shadowmange) for KSP 1.6
 	+ Fix shader bundle Windows-OpenGL compatibility
 * 2019-0216: 1.3.4.18 (Shadowmange) for KSP 1.6 PRE-RELEASE
