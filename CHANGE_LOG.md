@@ -1,5 +1,7 @@
 # Textures Unlimited :: Change Log
 
+* 2019-0414: 1.4.7.21 (Shadowmange) for KSP 1.7
+	+ Recompile for KSP 1.7
 * 2019-0306: 1.3.6.20 (Shadowmange) for KSP 1.6
 	+ Add several functions available for external mod integration to swap texture sets or reload existing textures on model changes.
 	+ First use of new build script for this repository, so please make note of any issues with packaging.
