@@ -1,5 +1,9 @@
 # Textures Unlimited :: Change Log
 
+* 2017-1220: 1.0.0.7 (Shadowmange) for KSP 1.3.1
+	+ FIX - Revert some unintended changes to shader property names
+	+ FIX - The other half of the part-hierarchy issues in the editor when using KSPTextureSwitch
+	+ FIX - Recoloring GUI config parameters not loading properly for width/height
 * 2017-1217: 1.0.0.6 (Shadowmange) for KSP 1.3.1
 	+ FIX - Recoloring GUI will only display the part-action 'Open Recoloring GUI' button if there is _something_ to recolor on the part.
 	+ FIX - KSPTextureSwitch (and recoloring system) will no longer effect children parts in the editor.
