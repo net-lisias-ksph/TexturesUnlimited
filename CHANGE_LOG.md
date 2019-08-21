@@ -1,5 +1,13 @@
 # Textures Unlimited :: Change Log
 
+* 2017-1217: 1.0.0.6 (Shadowmange) for KSP 1.3.1
+	+ FIX - Recoloring GUI will only display the part-action 'Open Recoloring GUI' button if there is _something_ to recolor on the part.
+	+ FIX - KSPTextureSwitch (and recoloring system) will no longer effect children parts in the editor.
+	+ FIX - Symmetry part handling for KSPTextureSwitch / SSTUTextureSwitch modules
+	+ CHANGE - Add ability to specify a flat color to use for a texture slot.
+	+ CHANGE - Add configuration fields for Recoloring GUI width/height to general config file.
+	+ CHANGE - Add an invert-alpha toggle to the stock replacement PBR shader.
+	+ CHANGE - SSTU/Masked shader -- add Emissive support
 * 2017-1203: 1.0.0.5 (Shadowmange) for KSP 1.3.1
 	+ FIX - Error that could result in explosions due to reflection probe collider when reverting to launch.  Reflection probe creation is now delayed from when the event is fired until the next Update() tick.
 	+ CHANGE - Property name for _Metallic multiplier to _Metal in SSTU/PBR/Metallic shader.  Apparently Unity has some internal conflicts with the _Metallic property name, where it refuses to default the property to any value but '0'.
