@@ -1,5 +1,15 @@
 # Textures Unlimited :: Change Log
 
+* 2017-1203: 1.0.0.5 (Shadowmange) for KSP 1.3.1
+	+ FIX - Error that could result in explosions due to reflection probe collider when reverting to launch.  Reflection probe creation is now delayed from when the event is fired until the next Update() tick.
+	+ CHANGE - Property name for _Metallic multiplier to _Metal in SSTU/PBR/Metallic shader.  Apparently Unity has some internal conflicts with the _Metallic property name, where it refuses to default the property to any value but '0'.
+	+ CHANGE - Combine scenery-near and scenery-far render passes into a single pass; the loss of depth-resolution will rarely if ever be visible in the low-resolution reflection texture, but -might- result in apparent z-fighting in distant geometry, and/or apparent out-of-order rendering.
+	+ CHANGE - Reflection probe texture updates are now amortized over 32 frames, up from 20.  Each pass of each cubemap face is now rendered on its own frame (3 passes per face * 6 faces = 18 frames), as well as the Unity internal reflection probe updates (14 frames).  Should result in slightly higher FPS and more consistent frame timing.
+	+ CHANGE - Add keyword support at the plugin/config level.  These are specified through PROPERTY blocks, with 'name = keyword', and 'keyword = FEATURE_TO_ACTIVATE'.
+		- Currently only supports enabling of keywords.
+		- Keyword-variants must be built into the shader before they can be used.  A list of keyword-variants will be published on the wiki in the documentation for each specific shader.
+	+ CHANGE - Add 'tinting' mode to the recoloring shaders (Masked + PBR version).  This is enabled with the keyword 'TINTING_MODE';  the default (no keywords activated) is to use the existing codepath.
+			- UNTESTED
 * 2017-1202: 1.0.0.5-pre (Shadowmange) for KSP 1.3.1 PRE-RELEASE
 	+ FIX - Error that could result in explosions due to reflection probe collider when reverting to launch.  Reflection probe creation is now delayed from when the event is fired until the next Update() tick.
 	+ CHANGE - Property name for _Metallic multiplier to _Metal in SSTU/PBR/Metallic shader.  Apparently Unity has some internal conflicts with the _Metallic property name, where it refuses to default the property to any value but '0'.
