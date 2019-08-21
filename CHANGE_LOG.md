@@ -1,5 +1,33 @@
 # Textures Unlimited :: Change Log
 
+* 2018-1028: 1.2.2.16 (Shadowmange) for KSP 1.5 PRE-RELEASE
+	+ Updated and recompiled for KSP 1.5
+		- Compatible with stock PBR shader - adds in-flight reflections
+		- Still does not work properly under DX9
+		- Should be mostly backwards compatible with existing config sets
+	+ New Shaders Available - See the wiki for details ( https://github.com/shadowmage45/TexturesUnlimited/wiki )
+		- Minimized shader variant count -- only Metallic, Specular, and Legacy exist, along with their transparent counterparts.
+		- New recoloring system implemented, usable from all shaders - See wiki for details
+		- Minor updates to subsurface scattering implementation, usable from all shaders - See wiki for details
+	+ CHANGE - Add a selection of new Icon Shaders that fix rendering issues on DX11/OpenGL for stock parts
+		- Also include configs to apply these shaders to most (all?) stock parts (based on the original shader name used in the material).
+	+ CHANGE - Add ability for MATERIAL blocks to specify a render-queue for that material.  Use 'renderQueue = XXXX' inside of the block to specify the value.
+	+ CHANGE - Add ability for MATERIAL blocks to specify texture scale and offsets (applied to all textures equally).
+		- 'textureScale = 1,1'
+		- 'textureOffset = 1,1'
+	+ CHANGE - Allow for 'modelShader=XXXX' syntax to be used in KSPTextureSwitch to inform the module to look for its texture-set data from a KSP_MODEL_SHADER config source.
+	+ CHANGE - Include a new stand-alone redistributable for AssetBundle model loading, using the '.kbm' file extension.  TU will continue to load and process '.smf' asset-bundle models as it did before.
+		- The main difference between these two is that .kbm models will not support TU shaders, and is intended for distribution by mods that only need model-loading functionality.
+	+ CHANGE - Add more error logging features on failed texture set, material, model, and texture lookups.  Debug information should be more useful and contain more reference data to help track down the issue.
+	+ CHANGE - Updates/changes to config layout for the mod.
+		- REFLECTION_CONFIG and UV_EXPORT configs moved inside of root TEXTURES_UNLIMITED node and all have been moved into a single file.
+		- Reflections are now enabled by default as they are needed for the stock reflective shaders.  They can still be patched to disable them if desired for whatever reason.
+	+ CHANGE - Update the debug 'dump world data' function to include a ton more data on transforms, materials, and shaders.
+	+ FIX - Icon shaders will no longer use 'sharedMaterial' when being applied - fixes issues of icon shaders being copied back onto the source part.
+	+ CHANGE - Color specifications in shader property blocks or for use in preset colors can now be specified in one of the following formats:
+		- hex - #FF80AAF8  (leading # is mandatory)
+		- float - 1.0,0.5,1.0,0.9725  (use of decimal is mandatory -- one is specified as '1.0' and not '1')
+		- byte - 255,128,255,247
 * 2018-0913: 1.1.2.15 (Shadowmange) for KSP 1.4.5
 	+ Update .version file and repackage for KSP 1.4.5 compatibility.
 	+ No other changes.
