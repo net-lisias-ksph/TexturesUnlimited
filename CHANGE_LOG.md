@@ -1,5 +1,8 @@
 # Textures Unlimited :: Change Log
 
+* 2018-0913: 1.1.2.15 (Shadowmange) for KSP 1.4.5
+	+ Update .version file and repackage for KSP 1.4.5 compatibility.
+	+ No other changes.
 * 2018-0605: 1.1.2.14 (Shadowmange) for KSP 1.4.3
 	+ Recompile vs. KSP 1.4.3 libs - update .version file accordingly
 	+ Finalize the DX11 'fix'; auto-enabled whenever DX11 or DX9 are detected
