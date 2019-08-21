@@ -1,5 +1,8 @@
 # Textures Unlimited :: Change Log
 
+* 2018-0121: 1.0.0.8 (Shadowmange) for KSP 1.3.1
+	+ FIX - Symmetry handling of parts using KSPTextureSwitch module
+	+ FIX - Incorrect URL specified in .version file
 * 2017-1220: 1.0.0.7 (Shadowmange) for KSP 1.3.1
 	+ FIX - Revert some unintended changes to shader property names
 	+ FIX - The other half of the part-hierarchy issues in the editor when using KSPTextureSwitch
