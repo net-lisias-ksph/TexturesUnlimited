@@ -1,5 +1,12 @@
 # Textures Unlimited :: Change Log
 
+* 2019-0622: 1.4.8.22 (Shadowmange) for KSP 1.7.2
+	+ Recompile for KSP 1.7.2
+	+ CHANGE - Disable TU's 'Reflection Manager', and use the stock Reflection Probes.  If you find reflections are not working in your game, enable the stock reflection settings in the in-game options menu.
+	+ CHANGE - On ModuleManager reload, clear all existing data.  Should fix issues of TU throwing errors during MM database reloads, and will actually allow for reloading the database to pick up changes to TU configs.
+	+ CHANGE - Remove graphics API check and warning.  As the stock reflection system is in use, no longer care what API is used.
+	+ KNOWN ISSUE - Stock skybox (stars) no longer present in reflections.  Stock issue with their reflection system.
+	+ KNOWN ISSUE - Scatterer no longer present in reflections.  Seems to be caused by changes to stock code regarding skyboxes, but may also be due to the recent Scatterer overhaul (or both?).
 * 2019-0414: 1.4.7.21 (Shadowmange) for KSP 1.7
 	+ Recompile for KSP 1.7
 * 2019-0306: 1.3.6.20 (Shadowmange) for KSP 1.6
