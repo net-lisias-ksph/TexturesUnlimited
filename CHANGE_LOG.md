@@ -1,5 +1,8 @@
 # Textures Unlimited :: Change Log
 
+* 2019-0216: 1.3.4.18 (Shadowmange) for KSP 1.6 PRE-RELEASE
+	+ Recompile Plugin for KSP 1.6
+	+ Recompile shaders to fix mixing issues with recoloring normalization.
 * 2018-1105: 1.2.3.17 (Shadowmange) for KSP 1.5
 	+ FIX - Clean up an issue with parsing for color values.
 	+ FIX - Many fixes for WIP - TUPartVariant module (stock PartVariant integration)
