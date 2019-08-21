@@ -1,5 +1,11 @@
 # Textures Unlimited :: Change Log
 
+* 2018-0421: 1.1.1.13 (Shadowmange) for KSP 1.3.1
+	+ FIX - Shader replacement on models using stock TEXTURE= for texture replacement should no longer null-ref.  This was caused by incomplete texture-set definitions leaving 'empty' texture slots on the model.
+	+ FIX - Check for null materials/shaders on stock parts when doing shader and material adjustments.
+	+ FIX - Transparent material render-queue sorting.  Transparent materials such as flags should now render properly after being adjusted by TU.
+	+ CHANGE - Add a new partmodule that handles the stock fairings.  See #40 for more info.
+	+ CHANGE - Add shader properties to control texture scale and texture offset.  See #49 for more info.
 * 2018-0322: 1.1.0.12 (Shadowmange) for KSP 1.3.1
 	+ No changelog provided
 * 2018-0121: 1.0.0.8 (Shadowmange) for KSP 1.3.1
