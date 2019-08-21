@@ -1,5 +1,10 @@
 # Textures Unlimited :: Change Log
 
+* 2018-0605: 1.1.2.14 (Shadowmange) for KSP 1.4.3
+	+ Recompile vs. KSP 1.4.3 libs - update .version file accordingly
+	+ Finalize the DX11 'fix'; auto-enabled whenever DX11 or DX9 are detected
+	+ Remove graphics API warning for DX11 (still warns when DX9 is used)
+	+ Add ability to override recoloring data through PROPERTY blocks (special-case exceptions)
 * 2018-0506: 1.1.2.14a (Shadowmange) for KSP 1.3.1 PRE-RELEASE
 	+ TESTING RELEASE
 	+ FIX - Add alternate rendering routine that can be used with DX9/DX11, slightly more overhead, but removes issues of inverted cubemap faces.
