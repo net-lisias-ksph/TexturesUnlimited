@@ -1,5 +1,8 @@
 # Textures Unlimited :: Change Log
 
+* 2018-1105: 1.2.3.17 (Shadowmange) for KSP 1.5
+	+ FIX - Clean up an issue with parsing for color values.
+	+ FIX - Many fixes for WIP - TUPartVariant module (stock PartVariant integration)
 * 2018-1028: 1.2.2.16 (Shadowmange) for KSP 1.5 PRE-RELEASE
 	+ Updated and recompiled for KSP 1.5
 		- Compatible with stock PBR shader - adds in-flight reflections
