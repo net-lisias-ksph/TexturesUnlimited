@@ -1,5 +1,27 @@
 # Textures Unlimited :: Change Log
 
+* 2019-0804: 1.5.8.23 (Shadowmange) for KSP 1.7.2
+	+ FIX - KSPTextureSwitch - Grabbing child-part transforms in the editor.
+	+ FIX - KSPTextureSwitch - Recoloring not applied to symmetry counterparts in editor.
+	+ FIX - KSPTextureSwitch - Not using 'default colors' specified in a texture-set, and always persisting colors from the first applied set.
+	+ FIX - TextureSet - Allow parsing of either float or byte notation in COLORS blocks.
+	+ CHANGE - Change default behavior for texture-sets to 'create new material'.  Previous behavior was to 're-use existing material' which caused absolute messes with keywords and other shader parameters, as previous values were not cleared from the material during set switches.
+		- Default mode for TEXTURE_SET is 'create'.  Default mode for MODEL_SHADER is 'update' (unchanged).
+		- This will have an impact on any configurations that were intentionally using the previous default 'update' behavior.  They will need to be explicitly updated to state that they should continue to use that behavior, by adding a 'mode = update' line to the MATERIAL blocks.
+		- This may also have a negative impact on patches targeting existing materials that had non-default values specified for such as 'specular' or 'hardness', as these values will no longer carry over from the original material and must be explicitly specified in the texture-set configuration.
+		- An error will be logged anytime a texture-set is loaded that does not specify its mode.
+	+ CHANGE - Move over to using the in-game settings screens for settings that are configurable at run-time.  Custom editor-reflections, custom reflection resolution, and a few other settings are now available from in-game.  Debug/logging options are still driven by the config-file based system.
+	+ CHANGE - Add a new Reflection Probe to the VAB/SPH to fix the incorrectly baked stock environment maps.
+		- Can be enabled/disabled in the in-game options.  Default is enabled.
+		- Resolution can be adjusted in the in-game options.  Default is 512x.
+	+ NEW FEATURE - Recoloring GUI - Add 'detail' multiplier slider to allow for user to control the amount of extracted detail that is used.
+		- This requires proper use of the 'normalization' system for proper detail extraction.
+		- Default is 100%, GUI slider goes from 0-500%, but can use manually typed values up to 999%.
+	+ NEW FEATURE - Preset Color Groups (Palettes in recoloring UI).  Config defined groups of colors that can be selected to limit the # of displayed colors in the recoloring UI.  These preset-color-groups can be themed, or setup for specific mods, etc.
+		- Currently there is no limitation on which palettes are available for any part/section.  If a palette is defined, it may be selected.
+		- In the future there will be a method to specify the default and available palettes for any given recolorable section.
+	+ CHANGE - Adjust a few of the preset colors to more closely match their intended shades.  Notably this includes the 'stock' colors.
+	+ CHANGE - Added a few new stock color presets that reflect the commonly used stock colors from the original textures.
 * 2019-0622: 1.4.8.22 (Shadowmange) for KSP 1.7.2
 	+ Recompile for KSP 1.7.2
 	+ CHANGE - Disable TU's 'Reflection Manager', and use the stock Reflection Probes.  If you find reflections are not working in your game, enable the stock reflection settings in the in-game options menu.
