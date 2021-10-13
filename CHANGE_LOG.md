@@ -1,5 +1,9 @@
 # Textures Unlimited :: Change Log
 
+* 2020-0301: 1.5.10.25 (Shadowmage) for KSP 1.9
+	+ Update for KSP 1.9
+	+ Fix issues with TU/* shaders with some of the stock normal maps
+	+ Add keyword driven support for BC5 normal maps ('keyword=TU_BC5_NRM')
 * 2020-0209: 1.5.9.24 (Shadowmage) for KSP 1.8
 	+ recompile and update for KSP 1.8
 	+ update Unity editor and project to 2019.2.2f1; match KSP version
