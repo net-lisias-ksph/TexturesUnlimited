@@ -1,5 +1,11 @@
 # Textures Unlimited :: Change Log
 
+* 2020-0209: 1.5.9.24 (Shadowmage) for KSP 1.8
+	+ recompile and update for KSP 1.8
+	+ update Unity editor and project to 2019.2.2f1; match KSP version
+	+ fix icon-shader clipping; incorrect default coords specified in the shader itself
+	+ add basic albedo color multiplication to the icon shaders, and update the default _Multiplier parameter to 2.25
+	+ recompile icon shader bundle, include .manifest file for info on what it contains
 * 2019-0804: 1.5.8.23 (Shadowmange) for KSP 1.7.2
 	+ FIX - KSPTextureSwitch - Grabbing child-part transforms in the editor.
 	+ FIX - KSPTextureSwitch - Recoloring not applied to symmetry counterparts in editor.
